@@ -16,7 +16,7 @@ public class Setting : MonoBehaviour
     {
         SceneManager.LoadScene("Title");
         Time.timeScale = 1;
-
+        SoundManager.Instance.StopClock();
     }
     public void Resum()
     {
