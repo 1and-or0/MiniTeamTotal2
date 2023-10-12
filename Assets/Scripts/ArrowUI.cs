@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ArrowUI : MonoBehaviour
 {
-    private LineRenderer lineRenderer;
-    private Vector3 dragStart;
+    private LineRenderer lineRenderer = new LineRenderer();
+    private Vector3 dragStart = new Vector3();
 
     private void Awake()
     {

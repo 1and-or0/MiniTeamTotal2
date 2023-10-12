@@ -10,6 +10,7 @@ public class Setting : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
+        SoundManager.Instance.StopClock();
     }
     public void Home()
     {
@@ -21,11 +22,12 @@ public class Setting : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+        SoundManager.Instance.PlayClock();
     }
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
-
+        SoundManager.Instance.StopClock();
     }
 }
