@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public GameObject ScoreTMP;
+    
     public int Score = 0;
+    public GameObject textObj;
+    private Text text;
 
     private static ScoreManager _instance;
     public static ScoreManager Instance
@@ -30,6 +33,9 @@ public class ScoreManager : MonoBehaviour
 
     void Awake()
     {
+        textObj = GameObject.FindGameObjectWithTag("Score");
+        text= textObj.GetComponent<Text>();
+        
         if ( _instance != null && _instance != this ) 
         {
             Destroy(gameObject);
@@ -43,6 +49,13 @@ public class ScoreManager : MonoBehaviour
 
     void sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
+        textObj = GameObject.FindGameObjectWithTag("Score");
+        text = textObj.GetComponent<Text>();
         Score = 0;
+
+    }
+    private void Update()
+    {
+        text.text = "Score: " + Score;
     }
 }

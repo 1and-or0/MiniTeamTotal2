@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Plane
   - Deadzone
+  - Score
   layers:
   - Default
   - TransparentFX
