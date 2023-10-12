@@ -11,7 +11,8 @@ public class Ball : MonoBehaviour
     private Vector3 startPosition;
     private Vector3 endPosition;
     private Collider _collider;
-
+    private float ignoreTime = 3f;
+    private float timer = 0f;
     void Start()
     {
         _collider = GetComponent<Collider>();
@@ -20,7 +21,9 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-        if (BallManager.Instance.isTurn)
+        timer += Time.deltaTime;
+
+        if (BallManager.Instance.isTurn && timer >= ignoreTime)
         {
             // 드래그 시작
             if (Input.GetMouseButtonDown(0))

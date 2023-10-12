@@ -7,7 +7,7 @@ public class PinOutUpdate : MonoBehaviour
 
     void OnDestroy()
     {
-        PinManager.Instance.OutPinNum += 1;
+        // PinManager.Instance.OutPinNum += 1;
 
         ScoreManager.Instance.Score += 100;
     }
