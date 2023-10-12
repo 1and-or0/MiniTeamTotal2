@@ -33,12 +33,12 @@ public class ArrowUI : MonoBehaviour
                 lineRenderer.SetPosition(1, dragStart - dragEnd + dragStart);
             }
 
-            // 마우스 버튼을 놓으면 드래그 종료
-            if (Input.GetMouseButtonUp(0))
-            {
-                lineRenderer.enabled = false;
-            }
+            
         }
-        
+        // 마우스 버튼을 놓으면 드래그 종료
+        if (Input.GetMouseButtonUp(0))
+        {
+            lineRenderer.enabled = false;
+        }
     }
 }

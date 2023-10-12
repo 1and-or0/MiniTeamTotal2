@@ -34,11 +34,12 @@ public class GameManger : MonoBehaviour
     {
         gameOverSet.SetActive(true);
         CountDown.IsGameStart = false;
-
+        SoundManager.Instance.StopClock();
     }
 
     public void GameClear()
     {
+        SoundManager.Instance.StopClock();
         gameClearSet.SetActive(true);
         CountDown.IsGameStart = false;
         int temp = PlayerPrefs.GetInt("UnlockedLevel");
