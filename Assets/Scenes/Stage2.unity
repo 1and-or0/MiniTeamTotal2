@@ -537,9 +537,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Home
-
-'
+  m_Text: Home
 --- !u!222 &517901185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1449,9 +1447,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Home
-
-'
+  m_Text: Home
 --- !u!222 &833299525
 CanvasRenderer:
   m_ObjectHideFlags: 0

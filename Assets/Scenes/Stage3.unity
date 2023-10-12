@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -537,9 +537,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Home
-
-'
+  m_Text: Home
 --- !u!222 &517901185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1431,9 +1429,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Home
-
-'
+  m_Text: Home
 --- !u!222 &833299525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2866,6 +2862,7 @@ MonoBehaviour:
   manager: {fileID: 1701906518}
   GameTime: 30
   GameTimeText: {fileID: 1548632958}
+  isPlay: 0
 --- !u!1 &1551212930
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,5 +23,9 @@ public class PinSound : MonoBehaviour
         {
             pinSource.PlayOneShot(pinTick);
         }
+        else if (collision.collider.tag == "Pin")
+        {
+            pinSource.PlayOneShot(pinTick);
+        }
     }
 }
