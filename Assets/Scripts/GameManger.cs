@@ -10,6 +10,7 @@ public class GameManger : MonoBehaviour
     public CountDownController CountDown;
     private static GameManger instance;
     public int PinScore = 1;
+    public int BallScore = 1;
 
     void Update()
     {
@@ -19,6 +20,14 @@ public class GameManger : MonoBehaviour
             GameClear();
             CountDown.IsGameStart = false;
         }
+
+        BallScore = GameObject.FindGameObjectsWithTag("Ball").Length;
+        if(BallScore==0 && CountDown.IsGameStart == true)
+        {
+            GameOver();
+            CountDown.IsGameStart = false;
+        }
+
     }
 
     public void GameOver()
